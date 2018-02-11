@@ -36,18 +36,24 @@ the mean value.
 
 ### Greedy
 For each query q
+
 a) If all neighbors (bidding advertisers for q) have spent their full budgets, then `continue`
+
 b) Else, match q to the neighbor with the highest bid
 
 ### MSVV
 Let xu be the fraction of advertiser's budget that has been spent and ψ(xu) = 1 − e^(xu−1) .
 For each query q
+
 a) If all neighbors have spent their full budgets, then `continue`
+
 b) Else, match q to the neighbor i that has the largest biq * ψ(xu) value.
 
 ### Balance
 For each query q
+
 a) If all neighbors have spent their full budgets, then `continue`
+
 b) Else, match q to the neighbor with the highest unspent budget.
 
 ## How to run
